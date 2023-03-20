@@ -1,0 +1,37 @@
+html, body {height:100%;}
+
+#titulo  {
+    font-family: cambria;
+    text-align: center;
+    color: white;
+}
+
+div#capa {
+    text-align: center;
+}
+
+div#texto1 {
+    color: gainsboro;
+    width: 1250px;
+    text-align: justify;
+    border-color: black;
+    border-style: solid;
+    font-size: 18px;
+    padding: 4px 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #531212;
+}
+
+div#gif {
+    text-align: center;
+}
+
+div#loadingGif {
+    text-align: center;
+}
+
+#gifcarregando {
+    width: 500px;
+}
