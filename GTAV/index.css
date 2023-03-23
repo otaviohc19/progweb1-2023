@@ -1,0 +1,100 @@
+/*Layout página inicial*/
+
+html, body {height:100%;}
+
+div#titulo{
+	background-color: #009900;
+	text-align: center;
+	text-decoration-style: bold;
+	font-size: 25px;
+}
+
+div.top{
+	background-image:url("gtamont.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	clear: both;
+}
+
+div#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#menu{
+	background-color: grey;
+	padding:0px;
+    margin:0px;
+    list-style:none;
+    text-align: center;
+}
+
+div#menu ul li{ 
+	display: inline; 
+}
+
+div#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+div#menu ul li a:hover{
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #19bc07;
+}
+
+div#conteudo{
+	width: 1050px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #EDEDED;
+}
+
+audio{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	font-style: italic;
+}
+
+div#texto{
+	text-align: justify;
+	border-color: black;
+	border-style: solid;
+	border-radius: 1px;
+}
+
+div#siterockstar{
+	align-items: center;
+	clear: both;
+}
+
+div#mapa{
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+div#veic{
+	text-align: center;
+}
+
+div#capa{
+	text-align: center;
+}
+
+div#rodinha{
+	text-align: center;
+}

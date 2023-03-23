@@ -1,0 +1,49 @@
+/* rappercast/estilo.css */
+.jumbotron{
+	background-color: #8652ff;
+}
+
+#fotos {
+	background-color: #af8cff;
+}
+
+#fotos img { /* Todas as imagens dentro de #fotos */
+	height: 200px;
+	width: auto;
+	margin-bottom: 15px;
+}
+
+.nav-link {
+	/* Força essa propriedade, mesmo se houver
+	outro CSS que o altere depois */
+	color: #2a2aa2 !important;
+}
+
+.navbar-brand {
+	color: #0008ff;
+}
+
+.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+#curiosidades {
+	background-color: #b98adb;
+}
+
+#contato {
+	background-color: #d97feb;
+}
+
+audio{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#podcast {
+	background-color: #9387e0;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,155 @@
+<!-- rappercast/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RapCast</title>
+	<meta charset="utf-8">
+	<!-- Essencial para o Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Importar FavIcon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Importar o Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+	<!-- Importar os ícones -->
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+	<!-- Importar o meu CSS -->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	
+</head>
+<body>
+
+
+<!-- Barra de Navegação/Menu -->
+<nav class="navbar navbar-expand-sm navbar-light">
+	<!-- Logomarca -->
+	<a class="navbar-brand" href="#">RapCast</a>
+
+<!-- Botão do Menu -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+	<!-- Links -->
+	<div class="collapse navbar-collapse" id="menu">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#sobre">Sobre</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#podcast">Podcast</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#fotos">Fotos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#curiosidades">Curiosidades</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contato">Contato</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<!-- SOBRE -->
+<a name="sobre"></a>
+<div class="jumbotron">
+	<h1>Young Thug</h1>
+	<p>Jeffery Lamar Williams, mais conhecido profissionalmente como Young Thug, é um rapper americano. Conhecido por seu não convencional estilo vocal, moda e por seu estilo de vida, ele recebeu pela primeira vez a atenção por suas colaborações com rappers do sul, tais como Rich Homie Quan, Birdman , Waka Flocka Flame, T.I. e Gucci Mane. Ele assinou um contrato com a gravadora de Gucci Mane, a 1017 Records no início de 2013 e no final daquele ano ele lançou sua primeira mixtape "1017 Thug", que contou com a faixa, elogiada pela crítica "Picacho."</p>
+</div>
+
+<!-- Podcast -->
+<a name="podcast"></a>
+<div class="container-fluid" id="podcast">
+	<div class="container">
+		<h1>Entrevista (Podcast)</h1>
+		<audio src="PodcastYoung.mp3" controls></audio>
+	</div>
+</div>
+
+<!-- FOTOS -->
+<a name="fotos"></a>
+<div class="container-fluid" id="fotos">
+	<div class="container">
+		<h1>Fotos</h1>
+
+		<div class="row">
+			<div class="col-md-4 text-center"><img src="1.jpg" class="rounded-circle"></div>
+			<div class="col-md-4 text-center"><img src="2.jpg" class="rounded-circle"></div>
+			<div class="col-md-4 text-center"><img src="3.png" class="rounded-circle"></div>
+		</div>
+	</div>
+</div>
+
+
+<!-- CURIOSIDADES -->
+<a name="curiosidades"></a>
+<div class="container-fluid" id="curiosidades">
+	<div class="container">
+		<h1>Curiosidades</h1>
+
+		<table  class="table table-striped table-hover">
+			<tr>
+				<th colspan="2">Informações</th>
+			</tr>
+			<tr>
+				<td>Idade:</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>Aniversário:</td>
+				<td>16 de agosto</td>
+			</tr>
+			<tr>
+				<td>Nascimento:</td>
+				<td>Estados Unidos</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+<!-- CONTATO -->
+<a name="contato"></a>
+<div class="container-fluid" id="contato">
+	<div class="container">
+		<h1>Contato RapCast</h1>
+
+		<span class="fas fa-envelope"></span> contato@rappercast.com<br/>
+		<span class="fas fa-phone"></span> 555-555-9494<br/>
+		<span class="fas fa-map-marker-alt"></span> Central RapCast - Hollywood 
+
+
+	</div>
+</div>
+
+
+
+<!-- Importar o JQuery -->
+<script type="text/javascript" src="jquery.js"></script>
+<!-- Importar o Javascript do Bootstrap -->
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+
+</body>
+</html>

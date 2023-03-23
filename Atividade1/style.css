@@ -6,6 +6,40 @@ html, body {height:100%;}
     color: white;
 }
 
+div#menu{
+	background-color: grey;
+	padding:0px;
+    margin:0px;
+    list-style:none;
+    text-align: center;
+}
+
+div#menu ul li{ 
+	display: inline; 
+}
+
+div#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+div#menu ul li a:hover{
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #19bc07;
+}
+
+#footer {
+    color: azure;
+    text-align: center;
+}
+
 div#capa {
     text-align: center;
 }
