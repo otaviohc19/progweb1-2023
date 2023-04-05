@@ -1,0 +1,146 @@
+body {
+	background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.carta-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.carta {
+	border: 5px solid #ffffff;
+	padding: 50px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	max-width: 600px;
+	text-align: center;
+	position: relative;
+	animation: border 15s ease infinite;
+}
+
+@keyframes border {
+	0% {
+		border-color: #ffffff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	50% {
+		border-color: #23D5AB;
+		box-shadow: 0px 0px 20px rgba(35, 213, 171, 0.8);
+	}
+
+	100% {
+		border-color: #ffffff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	}
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+    text-align: center;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px #000000;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	animation: pulse 2.8s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+img {
+    text-align: center;
+	margin-top: 30px;
+	max-width: 200px;
+	border-radius: 20%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	animation: zoom 15s ease infinite;
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.atributos {
+	margin-top: 50px;
+	display: flex;
+}
+
+.abilities li i {
+	background-color: #4CAF50;
+	padding: 5px;
+	border-radius: 50%;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+.weaknesses li i {
+	background-color: #f44336;
+	padding: 5px;
+	border-radius: 50%;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+.abilities li, .weaknesses li {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+
+h2 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+
+li {
+	margin-bottom: 5px;
+}
