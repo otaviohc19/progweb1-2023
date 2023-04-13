@@ -1,12 +1,12 @@
 body {
-    background-image: linear-gradient(to bottom, #ff6b6b, #f06595);
+  background-image: linear-gradient(to top, #000000, #FF0000);
 }
   
 
 .carta {
-    background-image: url('gatinho.jpeg');
-	background-size: cover;
-	background-position: center;
+    background-image: url('fundopaisagem.jpeg');
+	  background-size: cover;
+	  background-position: center;
     max-width: 500px;
     margin: 0 auto;
     background-color: #fff;
@@ -24,6 +24,7 @@ body {
 .carta-nome {
     margin-top: 0;
     font-size: 24px;
+    color: white;
 }
   
 .carta-foto {
@@ -36,7 +37,8 @@ body {
   
 .carta-bio {
     margin: 0;
-    font-style: italic;
+    font-style: bold;
+    color: white;
 }
   
 .carta-corpo {
@@ -45,7 +47,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
   
 .carta-habilidade-especial, .carta-fraqueza {
@@ -107,7 +109,7 @@ body {
 }
   
 .carta-background-image {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
