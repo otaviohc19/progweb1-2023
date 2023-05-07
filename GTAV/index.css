@@ -1,20 +1,40 @@
 /*Layout página inicial*/
 
-html, body {height:100%;}
+html, body {
+	height:100%;
+	background: linear-gradient(to bottom, black, gray);
+	background-attachment: fixed;
+}
+
+@font-face {
+	font-family: 'Pricedown';
+	src: url('fontes/pricedown.otf') format('truetype');
+}
 
 div#titulo{
-	background-color: #009900;
 	text-align: center;
-	text-decoration-style: bold;
-	font-size: 25px;
+	font-size: 40px;
+	font-family: 'Pricedown', sans-serif;
+	color: #EDEDED;
+	line-height: 0.9;
+	text-shadow:
+	 -1px -1px 0 #000,
+	 1px -1px 0 #000,
+	 -1px  1px 0 #000,
+	 1px  1px 0 #000,
+	 -2px -2px 0 #000,
+	 2px -2px 0 #000,
+	 -2px  2px 0 #000,
+	 2px  2px 0 #000;
 }
 
 div.top{
-	background-image:url("gtamont.jpg");
+	background-image:url("fotoHeader.webp");
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	clear: both;
+	border-radius: 5px;
 }
 
 div#logo{
@@ -23,36 +43,68 @@ div#logo{
 	margin-right: auto;
 }
 
-div#menu{
-	background-color: grey;
-	padding:0px;
-    margin:0px;
-    list-style:none;
-    text-align: center;
+#logo img {
+	position: relative;
+	opacity: 0;
+	animation-name: aparecer;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
 }
 
-div#menu ul li{ 
+@keyframes aparecer {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+}
+
+#menu{
+	background-image: linear-gradient(to top, #21c021 0%, #237919 50%);
+	margin: 5px;
+	padding: 1px;
+	width: 100%;
+    list-style:none;
+    text-align: center;
+	text-shadow:
+	 -1px -1px 0 #000,
+	 1px -1px 0 #000,
+	 -1px  1px 0 #000,
+	 1px  1px 0 #000,
+	 -2px -2px 0 #000,
+	 2px -2px 0 #000,
+	 -2px  2px 0 #000,
+	 2px  2px 0 #000;
+}
+
+#menu ul li{ 
 	display: inline; 
 }
 
-div#menu ul li a {
+#menu ul li a {
     padding: 2px 10px;
     display: inline-block;
+	border: 2px solid white;
 
     /* visual do link */
-    background-color:#EDEDED;
-    color: #333;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: whitesmoke;
     text-decoration: none;
-    border-bottom:3px solid #EDEDED;
+	font-family: 'Pricedown', sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	margin: auto;
 }
 
-div#menu ul li a:hover{
+#menu ul li a:hover{
     background-color:#D6D6D6;
     color: #6D6D6D;
-    border-bottom:3px solid #19bc07;
 }
 
-div#conteudo{
+#conteudo{
 	width: 1050px;
 	display: block;
 	margin-right: auto;
@@ -66,8 +118,18 @@ audio{
 	margin-right: auto;
 }
 
-h1{
-	font-style: italic;
+#temaTitulo{
+	font-family: 'Pricedown', sans-serif;
+	color: #EDEDED;
+	text-shadow:
+	 -1px -1px 0 #000,
+	 1px -1px 0 #000,
+	 -1px  1px 0 #000,
+	 1px  1px 0 #000,
+	 -2px -2px 0 #000,
+	 2px -2px 0 #000,
+	 -2px  2px 0 #000,
+	 2px  2px 0 #000;
 }
 
 div#texto{
@@ -75,6 +137,9 @@ div#texto{
 	border-color: black;
 	border-style: solid;
 	border-radius: 1px;
+	padding: 20px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 div#siterockstar{
@@ -97,4 +162,37 @@ div#capa{
 
 div#rodinha{
 	text-align: center;
+}
+
+
+div#menuFim{
+	background-image: linear-gradient(to top, #21c021 0%, #237919 50%);
+	margin: 5px;
+	padding: 1px;
+    list-style:none;
+    text-align: center;
+}
+
+div#menuFim ul li{ 
+	display: inline; 
+}
+
+div#menuFim ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: whitesmoke;
+    text-decoration: none;
+	font-family: 'Pricedown', sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	margin: auto;
+}
+
+div#menuFim ul li a:hover{
+    background-color:#D6D6D6;
+    color: #6D6D6D;
 }
