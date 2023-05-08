@@ -2,7 +2,7 @@
 
 html, body {
 	height:100%;
-	background: linear-gradient(to bottom, black, gray);
+	background: linear-gradient(to bottom,#1F0802 60%,#04D939);
 	background-attachment: fixed;
 }
 
@@ -173,7 +173,7 @@ div#logo{
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #EDEDED;
+	background-color: rgb(237, 237, 237);
 	padding-bottom: 50px;
 }
 
