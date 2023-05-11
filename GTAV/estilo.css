@@ -243,9 +243,6 @@ div#menuFim {
     align-items: center;
 }
 
-
-
-
 div#menuFim ul li{ 
 	display: inline; 
 }
@@ -279,6 +276,27 @@ div#galeria{
 	;
 }
 
-#galeriaFotos{
-	
+#galeriaFotos img{
+	width: 30%;
+	height: 300px;
+	margin: auto;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+#tituloGaleria{
+	font-family: 'Pricedown', sans-serif;
+	color: #EDEDED;
+	text-shadow:
+	 -1px -1px 0 #000,
+	 1px -1px 0 #000,
+	 -1px  1px 0 #000,
+	 1px  1px 0 #000,
+	 -2px -2px 0 #000,
+	 2px -2px 0 #000,
+	 -2px  2px 0 #000,
+	 2px  2px 0 #000;
+
+	font-size: 30px;
+	text-align: center;
 }
