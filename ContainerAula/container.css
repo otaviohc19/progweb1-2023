@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #142f43;
+
+}
+
+#container{
+    background-color: #4c6895;
+    width: 50vw;
+    height: 50vh;
+    margin: 25vh auto;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Como será a distribuição no eixo/direção PRINCIPAL */
+    /* flex-start, flex-end, center, space-around, space-between, space-evenly*/
+    justify-content: space-between;
+    /* Como será a distribuição do eixo/direção SECUNDÁRIA */
+    /* stretch, flex-start, flex-end, center */
+    align-items: center;
+}
+
+.item {
+    background-color: #9bc4f5;
+    margin: 0.5em;
+}

@@ -1,0 +1,58 @@
+/* items.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #142f43;
+
+}
+
+#container{
+    background-color: #4c6895;
+    width: 90vw;
+    height: 50vh;
+    margin: 25vh auto;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* Como será a distribuição no eixo/direção PRINCIPAL */
+    /* flex-start, flex-end, center, space-around, space-between, space-evenly*/
+    justify-content: flex-start;
+    /* Como será a distribuição do eixo/direção SECUNDÁRIA */
+    /* stretch, flex-start, flex-end, center */
+    align-items: stretch;
+}
+
+.item {
+    background-color: #9bc4f5;
+    margin: 0.5em;
+}
+
+
+.um {
+    /* Define a fatia de crescimento do item, caso seja permitido (0 não permite)*/
+    flex-grow: 0;
+    /* Define se o item poderá encolher, caso ele não possua espaço suficiente */
+    flex-shrink: 0;
+    /* Tamanho ideal do item. Deve ser combinado com as propriedades
+    de crescimento e encolhimento */
+    flex-basis: 200px;
+}
+
+.dois {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 400px;
+}
+
+.tres {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
