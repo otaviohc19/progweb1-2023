@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+/* Configurações iniciais */
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: 2rem solid var(--main-color);
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.1);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+    scroll-padding-top: 6.5rem;
+}
+
+
+/* Elementos comuns */
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px; /* largura máxima */
+    margin: 0 auto; /* centralizar */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading img{
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+.heading h3{
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+}
+.btn:hover{
+    background-color: var(--black);
+}
+
+
+
+/* MENU */
+.header{
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: var(--box-shadow);
+}
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+.header .flex .logo img {
+    height: 4.5rem;
+}
+
+#menu-btn { /* Ícone de exibir/esconder o menu */
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+.header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+/* HERO/HOME */
+.home-bg {
+    /* background: url('../images/home-bg.jpg'); */
+    background: 
+        linear-gradient(90deg, var(--white), transparent 70%),
+        url('../images/home-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.home-bg .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+.home-bg .home .content {
+    width: 50rem;
+    text-align: center;
+}
+.home-bg .home .content h3 {
+    font-size: 6rem;
+    font-family: 'Merienda One', cursive;
+    color: var(--black);
+}
+.home-bg .home .content p {
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+
+/* ABOUT/SOBRE */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+}
+.about .image {
+    /* flex: flex-grow flex-shrink flex-basis */
+    flex: 1 1 40rem;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40rem; */
+}
+.about .image img {
+    width: 100%;
+}
+.about .content {
+    flex: 1 1 40rem;
+}
+.about .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+    padding-bottom: 1rem;
+}
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+
+
+/* FACILITY / INSTALAÇÕES */
+.facility .box-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1.5rem;
+}
+.facility .box-container .box {
+    text-align: center;
+}
+.facility .box-container .box img {
+    height: 10rem;
+    margin-bottom: 0.5rem;
+}
+.facility .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+.facility .box-container .box p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
