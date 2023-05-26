@@ -33,7 +33,7 @@ div#titulo{
 .top {
 	height: 370px;
 	position: relative;
-	background-image: url(fotoHeader.webp);
+	background-image: url(imagens/fotoHeader.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
