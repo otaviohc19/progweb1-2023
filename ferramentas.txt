@@ -1,2 +1,3 @@
 Ferramenta para ícones: https://fontawesome.com/
 Ferramenta para assets: https://www.kenney.nl/
+Ferramenta para paletas de cores: https://color.adobe.com/pt/trends
