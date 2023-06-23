@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+	--primary-color: #E26446;
+	--black: #4A4A4C;
+	--grey: #9D9D9F;
+	--white: #FFFFFF;
+	--border: 2rem solid var(--main-color);
+}
+
 * {
+	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 .topo {
-	background-color: aqua;
+	background-color: var(--grey);
 	display: flex;
 	justify-content: space-between;
 }
@@ -16,5 +27,10 @@
 }
 
 .item {
-	padding: 2px;
+	display: flex;
+	padding: 1rem;
+}
+
+#menu-btn {
+	display: none;
 }
