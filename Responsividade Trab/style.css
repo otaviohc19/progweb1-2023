@@ -11,9 +11,24 @@
 * {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
+html {
+    scroll-padding-top: 6.5rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px; /* largura máxima */
+    margin: 0 auto; /* centralizar */
+}
+
+/* MENU TOPO */
 .topo {
 	background-color: var(--grey);
 	display: flex;
@@ -33,4 +48,29 @@
 
 #menu-btn {
 	display: none;
+}
+
+
+/* HOMEPAGE  */
+.homePage {
+	display: flex;
+	justify-content: space-between;
+}
+
+.textoMenorHome, .textoMaiorHome h1 {
+	margin-top: 1rem;
+}
+
+.textoMaiorHome h1 {
+	font-size: 28px;
+}
+
+#botaoHome {
+	color: var(--white);
+	background-color: var(--black);
+	border: var(--border);
+	padding: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-top: 1rem;
 }
