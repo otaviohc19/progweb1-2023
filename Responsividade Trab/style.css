@@ -1,76 +1,438 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-:root {
-	--primary-color: #E26446;
-	--black: #4A4A4C;
-	--grey: #9D9D9F;
-	--white: #FFFFFF;
-	--border: 2rem solid var(--main-color);
+
+:root{
+    --principal: #2b2b2b;
+    --black: #4A4A4C;
+    --gray: #9D9D9F;
+    --white: #FFFFFF;
+    --borda: 0.2rem solid var(--black);
 }
 
-* {
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
 }
-
-html {
-    scroll-padding-top: 6.5rem;
+*::selection{
+    background-color: var(--principal);
+    color: var(--white);
+}
+.barra {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .barra {
+      display: block;
+    }
+  }
+html{
+    font-size: 62.5%; /* Tamanho padrão: 10px */
+    overflow-x: hidden; /* Caso a largura do site seja maior que o conteudo, esconda o excesso */
+    
 }
 
-section {
+section{
     padding: 3rem 2rem;
-    max-width: 1200px; /* largura máxima */
-    margin: 0 auto; /* centralizar */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* MENU TOPO */
-.topo {
-	background-color: var(--grey);
-	display: flex;
-	justify-content: space-between;
+/* Títulos */
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading img{
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+.heading h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
 }
 
-.logo {
-	display: flex;
-	justify-content: space-around;
-	margin: 1rem;
+/* Botões */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--principal);
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--black);
 }
 
-.item {
-	display: flex;
-	padding: 1rem;
+/* .header */
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 0.5rem 1rem rgb(165, 165, 165);
+    z-index: 1000;
 }
-
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+.header .flex .logo img{
+    height: 3.5rem;
+}
+.header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .flex .navbar a:hover{
+    text-decoration: underline;
+    color: var(--principal);
+}
+ 
 #menu-btn {
-	display: none;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    margin: 1rem;
+    /* display: none; */
+}
+
+#menu-btnc {
+    display: none;
+}
+
+/* home bg */
+.home-bg{
+    background: linear-gradient(90deg, var(--white), transparent 70%), url("https://picsum.photos/1500/1000?grayscale") no-repeat;
+    /* background: linear-gradient(90deg, rgb(255, 255, 255), transparent 70%); */
+    background-size: cover;
+    background-position: center;
+}
+.home-bg .home{
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+.home-bg .home .content{
+    width: 50rem;
+    text-align: left;
+}
+.home-bg .home .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.home-bg .home .content p{
+    padding: 1em 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+/* welcome */
+.welcome{
+    background-color:rgb(214, 214, 214)
+}
+.welcome .heading h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.welcome .heading h2{
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.welcome .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.welcome .box-container .box i{
+    font-size: 10rem;
+    color: var(--black);
+}
+.welcome .box-container .box{
+    text-align: center;
+}
+.welcome .box-container .box img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.welcome .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.welcome .box-container .box h2{
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+
+/* activities */
+.activities{
+    text-align: center;
+}
+
+.activities .heading{
+    width: 50rem;
+    text-align: left;
+    
+}
+
+.activities .heading h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.activities .heading h2{
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.activities .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.activities .box-container .box i{
+    font-size: 10rem;
+    color: var(--black);
+}
+.activities .box-container .box{
+    text-align: center;
+}
+.activities .box-container .box img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.activities .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.activities .box-container .box h2{
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
 }
 
 
-/* HOMEPAGE  */
-.homePage {
-	display: flex;
-	justify-content: space-between;
+/* home bg */
+.Community-bg{
+    background: linear-gradient(-90deg, var(--white), transparent 70%), url("https://picsum.photos/1500/1000?grayscale") no-repeat;
+    /* background: linear-gradient(90deg, rgb(255, 255, 255), transparent 70%); */
+    background-size: cover;
+    background-position: center;
+}
+.Community-bg .Community{
+    min-height: 70rem;
+    display: flex;
+    align-items:center;
+    justify-content: end;
+}
+.Community-bg .Community .content{
+    width: 50rem;
+    text-align: left;
+}
+.Community-bg .Community .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.Community-bg .Community .content p{
+    padding: 1em 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2;
 }
 
-.textoMenorHome, .textoMaiorHome h1 {
-	margin-top: 1rem;
+/* popular */
+.popular{
+    text-align: center;
 }
 
-.textoMaiorHome h1 {
-	font-size: 28px;
+.popular .heading{
+    width: 50rem;
+    text-align: left;
+    
 }
 
-#botaoHome {
-	color: var(--white);
-	background-color: var(--black);
-	border: var(--border);
-	padding: 1rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	margin-top: 1rem;
+.popular .heading h3{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.popular .heading h2{
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.popular .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.popular .box-container .box i{
+    font-size: 10rem;
+    color: var(--black);
+}
+.popular .box-container .box{
+    text-align: center;
+}
+.popular .box-container .box img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.popular .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+.popular .box-container .box h2{
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--black);
+    font-family: 'Merienda One', sans-serif;
+}
+
+/* contact */
+.contact {
+    background-color: #9D9D9F;
+    
+    display: flex;
+    align-items: center;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* gap: 2rem; */
+}
+.contact .aaa{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* position: relative; */
+    /* padding: 1.5rem 2rem; */
+}
+.contact form{
+    flex: 1 1 30rem;
+    /* border: var(--borda); */
+    padding: 2rem;
+}
+.contact .row h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+.contact .row h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+/* footer (rodapé) */
+.footer .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.footer .box-container .box{
+    text-align: center;
+}
+.footer .box-container i{
+    font-size: 2.5rem;
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--principal);
+    line-height: 6rem;
+    color: var(--white);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.footer .box-container .box h3{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+.footer .box-container .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light);
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    border-top: var(--borda);
+    font-size: 1.5rem;
+    color: var(--black);
+    padding-top: 2.5rem;
+}
+.footer .credit span{
+    color: var(--principal);
+}
+
+
+
+/* Tela de Smartphone */
+@media (max-width: 600px){
+    html{
+        font-size: 50%;
+    }
+    .heading img{
+        height: 3rem;
+    }
+    .heading h3{
+        font-size: 3rem;
+    }
+
+    #menu-btnc {
+        display: inline-block;
+    }
+    nav {
+        display: none;
+    }
+    
+    .welcome .box-container,
+    .menu .box-container,
+    .activities .box-container,
+    .comunity .box-container,
+    .contact .box-container,
+    .popular .box-container{
+        grid-template-columns: auto;
+    }
 }
