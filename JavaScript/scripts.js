@@ -82,6 +82,47 @@ for ( let i = 0; i < 10; i++){
     imprime(i);
 }
 
+// === é usado para comparar tanto o conteúdo da variável quanto o tipo dela
+let numero = "100";
+if (numero === 100) {
+    imprime("igual a 100");
+} else {
+    imprime("diferente de 100");
+}
+
+
+// FUNÇÕES
+imprime("<br />FUNÇÕES");
+
+function soma(num1, num2){
+    let resultado = num1 + num2;
+
+    return resultado;
+}
+
+// Chamar uma função
+let conta = soma(10, 20);
+imprime("Conta vale " + conta);
+
+function multiplica (num1, num2) {
+    let _num1;
+    if(num1 == undefined) {
+        _num1 = 1;
+    } else {
+        _num1 = num1;
+    }
+
+    // let _num2 = num2 == undefined ? 1 : num2;
+    // let _num2 = num2 ?? 1;
+
+    let resultado = _num1 * _num2;
+    return resultado;
+}
+
+
+conta = multiplica(10, 4);
+imprime("A multiplicação vale " + conta);
+
 /*  Crie um programa que receba o preço de um produto, uma quantidade de itens comprados,
     o valor em dinheiro que o cliente possui.
     A cada item passado no caixa exiba o valor do produto e o valor parcial da compra.
